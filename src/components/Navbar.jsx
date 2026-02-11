@@ -71,6 +71,7 @@ const navbar = () => {
                     </a>
 
                 </div>
+                <div> test</div>
             </div>}
         </nav>
     )
