@@ -15,7 +15,7 @@ const Hero = () => {
     const [showAppCode, setShowAppCode] = useState()
     const [activeTab, setActiveTab] = useState("App.jsx")
     return (
-        <section className=' md:flex items-center justify-between md:mt-10 '>
+        <section className=' md:flex items-center justify-between md:my-10 mx-7'>
             <div className='flex flex-col justify-center items-center py-4 '>
                 <div className='px-2 py-1 text-gray-600 rounded-full bg-slate-900 flex items-center text-xs sm:text-sm md:text-md delay-100'> Introducing codeFlow AI 2.0
 
@@ -68,8 +68,10 @@ const Hero = () => {
                                         : "bg-white/5 text-gray-300 border-white/10 "} `}>Navbar.Jsx</button>
 
                         </div>
-                        <div className='overflow-auto h-49 '>
-                            <SyntaxHighlighter language="javascript" className="" style={nightOwl}>
+                        <div className='overflow-auto h-49  '>
+                            <SyntaxHighlighter
+                                language="javascript"
+                            >
                                 {codeExamples[activeTab]}
                             </SyntaxHighlighter>
                         </div>
